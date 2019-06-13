@@ -17,6 +17,7 @@
     "sdp-verify": "./checker.js"
   },
   "scripts": {
+    "build": "MODE=development webpack-cli && MODE=production webpack-cli",
     "lint": "eslint .",
     "test": "bndg test/*.test.js",
     "precoverage": "istanbul cover bndg test/*.test.js",
@@ -27,7 +28,9 @@
     "bandage": "^0.5.0",
     "co-fs": "^1.2.0",
     "eslint": "^5.10.0",
-    "istanbul": "^0.4.5"
+    "istanbul": "^0.4.5",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
   },
   "bugs": {
     "url": "https://github.com/clux/sdp-transform/issues"
